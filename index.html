@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douha's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <header>
+        <h1>Douha's Portfolio</h1>
+        <button class="hamburger" aria-label="Toggle menu">☰</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1>Douha Assafiri</h1><br>
+            <p>
+                I bring code to life, blending precision and creativity to craft impactful solutions. With a strong
+                foundation
+                in software development, I specialize in building efficient, scalable systems that solve real-world
+                problems.
+                My expertise extends beyond programming, incorporating graphic design and 3D modeling to create projects
+                that are not only functional but also visually engaging.
+            </p>
+            <div class="buttons">
+                <a href="projects.html" class="button">Explore My Work</a>
+                <a href="contact.html" class="button">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2><br>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <h3>Space Invaders Game</h3>
+                    <p>A fun arcade game built in C# with SplashKit.</p>
+                    <a href="#space-invaders" class="button">View Project</a>
+                </div>
+                <br><br>
+                <div class="project-item">
+                    <h3>Instant Messaging App</h3>
+                    <p>A real-time messaging app built using Python and C#.</p>
+                    <a href="#messaging-app" class="button">View Project</a>
+                </div>
+                <br><br>
+                <div class="project-item">
+                    <h3>Portfolio Website</h3>
+                    <p>This very website, crafted with HTML, CSS, and JavaScript.</p>
+                    <a href="#portfolio-website" class="button">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complementary Skills Section -->
+        <section id="skills">
+            <h2>Beyond Coding</h2><br>
+            <p>My design and 3D modeling skills add creativity and depth to my coding projects.</p><br>
+            <div class="skills-gallery">
+                <div class="skill-item">
+                    <img src="images/poster-thumbnail.jpg" alt="Poster Design">
+                    <p>Graphic Poster Design</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/3d-model-thumbnail.jpg" alt="3D Model">
+                    <p>3D Modeling</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Douha. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

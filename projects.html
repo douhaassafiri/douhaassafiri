@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Douha's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <button class="hamburger" aria-label="Toggle menu">☰</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Explore My Code</h2>
+
+            <!-- Project List -->
+            <div class="project-list">
+                <!-- Space Invaders Game -->
+                <div class="project-item">
+                    <h3>Space Invaders Game</h3>
+                    <p>A fun arcade game built in C# with SplashKit.</p>
+                    <button class="toggle-files" onclick="toggleDetails('project1-files')">View Files</button>
+                    <div id="project1-files" class="file-list" style="display: none;">
+                        <pre><code class="csharp">
+// Program.cs
+using System;
+using SplashKitSDK;
+
+namespace spaceinvaders
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            GameManager game = new GameManager();
+            game.GameLoop();
+        }
+    }
+}
+
+                    </code></pre>
+                        <div class="button-container">
+                            <a href="https://github.com/douhaassafiri/spaceinvaders" target="_blank" class="button">View
+                                Full Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instant Messaging App -->
+                <div class="project-item">
+                    <h3>Instant Messaging App</h3>
+                    <p>A real-time messaging app built with Python and C#.</p>
+                    <button class="toggle-files" onclick="toggleDetails('project2-files')">View Files</button>
+                    <div id="project2-files" class="file-list" style="display: none;">
+                        <pre><code class="python">
+# main.py
+from fastapi import FastAPI
+from routers.messages import router as messages_router
+
+app = FastAPI()
+
+app.include_router(messages_router, prefix="/api", tags=["Messages"])
+
+@app.get("/")
+async def root():
+    """
+    Root endpoint to test if the server is running.
+    """
+    return {"message": "Welcome to the Chat App API!"}
+
+@app.get("/status", tags=["System"])
+async def status():
+    return {"status": "online"}
+
+                    </code></pre>
+                        <div class="button-container">
+                            <a href="https://github.com/douhaassafiri/ChatApp" target="_blank" class="button">View
+                                Full Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Website -->
+                <div class="project-item">
+                    <h3>Portfolio Website</h3>
+                    <p>This very website, crafted with HTML, CSS, and JavaScript.</p>
+                    <button class="toggle-files" onclick="toggleDetails('project3-files')">View Files</button>
+                    <div id="project3-files" class="file-list" style="display: none;">
+                        <pre><code class="html">
+                            &lt;!-- index.html --&gt;
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang=&quot;en&quot;&gt;
+                            
+                            &lt;head&gt;
+                                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                                &lt;title&gt;Douha&#39;s Portfolio&lt;/title&gt;
+                                &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+                                &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+                                &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css&quot;&gt;
+                                &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js&quot;&gt;&lt;/script&gt;
+                                &lt;script&gt;
+                                    hljs.highlightAll();
+                                &lt;/script&gt;
+                            &lt;/head&gt;
+                            
+                            &lt;body&gt;
+                                &lt;header&gt;
+                                    &lt;h1&gt;Douha&#39;s Portfolio&lt;/h1&gt;
+                                    &lt;button class=&quot;hamburger&quot; aria-label=&quot;Toggle menu&quot;&gt;☰&lt;/button&gt;
+                                    &lt;nav&gt;
+                                        &lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;
+                                        &lt;a href=&quot;about.html&quot;&gt;About&lt;/a&gt;
+                                        &lt;a href=&quot;projects.html&quot;&gt;Projects&lt;/a&gt;
+                                        &lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;
+                                    &lt;/nav&gt;
+                                &lt;/header&gt;
+                                &lt;main&gt;
+                                    &lt;!-- Website Content --&gt;
+                                &lt;/main&gt;
+                                &lt;footer&gt;
+                                    &lt;p&gt;&amp;copy; 2025 Douha. All rights reserved.&lt;/p&gt;
+                                &lt;/footer&gt;
+                                &lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+                            &lt;/body&gt;
+                            
+                            &lt;/html&gt;
+                    </code></pre>
+                        <div class="button-container">
+                            <a href="https://github.com/douhaassafiri/douhaassafiri" target="_blank" class="button">View
+                                Full Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Douha. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
